@@ -19,6 +19,7 @@ uint8_t rx_packet[PACKET_SIZE];
 void setup(void)
 {
 	Serial.begin(BAUD_RATE);
+	XCVR.begin(BAUD_RATE);
 	pinMode(LED_BUILTIN, OUTPUT);
 
 	Serial.println("TRANSMITTER ON");
