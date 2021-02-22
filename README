@@ -2,15 +2,15 @@ Ping on UART LoRa Modules
 =========================
 
 Initiator:
-The device that transmits ping frames and waits for reply.
+The device that transmits ping packet and waits for reply.
 
 Reflector:
-The device that responds to ping frames, then sends reply.
+The device that responds to ping packet, then sends reply.
 
-Frame Format:	(Name / Size)
+Packet Format:	(Name / Size)
 	Start Mark:		1 Byte
 	Op-code:		1 Byte
-	Frame Serial Number:	4 Byte
+	Packet Serial Number:	4 Byte
 	Simple Checksum:	2 Byte
 
 Special Values:
